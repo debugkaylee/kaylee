@@ -7,104 +7,245 @@
   <style></style>
   <script src=""></script>
   <body>
-    <div class="">
-      <h1>This is Debug Lab Survey Form</h1>
-      <p>Thank you for taking your time to help us improve the platform.</p>
-      <form>
-        <label>Enter your name</label>
-        <input type="text" placeholder="name" required />
-        <label>Enter your email</label>
-        <input type="text" placeholder="name" required />
-        <label>Enter your age</label>
-        <input type="text" placeholder="age" required />
-        <p>Which option bestly describes your current role</p>
-        <select id="dropdown" name="role" class="form-control" required>
-          <option valve="student">Student</option>
-          <option valve="full-time-employee">Full Time Employee</option>
-          <option valve="part-time-employee">Part Time Employee</option>
-          <option valve="retiree">Retiree</option>
-          <option valve="prefer-not-to-tell">Prefer not to tell</option>
-        </select>
-        <p>Would you recommend Debug Lab to your friend?</p>
+    ::before
+    <div class="container">
+      <form id="survey-form">
+        <h1>This is Debug Lab Survey Form</h1>
+        <h2>Thank you for taking your time to help us improve the platform.</h2>
+        <form>
+          <label>Enter your name</label>
+          <input type="text" placeholder="name" required />
+          <label>Enter your email</label>
+          <input type="text" placeholder="email" required />
+          <label>Enter your age</label>
+          <input type="text" placeholder="age" required />
+          <p>Which option bestly describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option value="" disabled selected>Select your role</option>
+            <option value="student">Student</option>
+            <option value="full-time-employee">Full Time Employee</option>
+            <option value="part-time-employee">Part Time Employee</option>
+            <option value="prefer-not-to-tell">Prefer not to tell</option>
+          </select>
+          <p>1. What is Your Favourite Features about Debug Lab?</p>
+          <select id="dropdown" name="features" class="form-control" required>
+            <option value="" disabled selected>Select your features</option>
+            <option value="challenge">Challenge</option>
+            <option value="project">Project</option>
+            <option value="community">Community</option>
+            <option value="devices">Devices</option>
+            <option value="courses">Courses</option>
+          </select>
+          <p>
+            2. What Would You Like to See Improved? (can choose more than 1)
+          </p>
+          <input
+            type="checkbox"
+            id="improvement1"
+            name="improvement1"
+            value="ways-of-teaching"
+          />
+          <label for="improvement1">Ways of Teaching</label><br />
+          <input
+            type="checkbox"
+            id="improvement2"
+            name="improvement2"
+            value="challenges"
+          />
+          <label for="improvement2">Challenges</label><br />
+          <input
+            type="checkbox"
+            id="improvement3"
+            name="imorovement3"
+            value="course-duration"
+          />
+          <label for="improvement3">Course Duration</label><br />
+          <input
+            type="checkbox"
+            id="improvement4"
+            name="improvement4"
+            value="additional-course"
+          />
+          <label for="improvement4">Additional Course</label><br />
+          <input
+            type="checkbox"
+            id="improvement5"
+            name="improvement5"
+            value="extracurricular-activities"
+          />
+          <label for="improvement5">Extracurricular Activities</label><br />
+          <input
+            type="checkbox"
+            id="improvement6"
+            name="improvement6"
+            value="facilities"
+          />
+          <label for="improvement6">Facilities</label><br />
+          <input
+            type="checkbox"
+            id="improvement7"
+            name="improvement7"
+            value="others"
+          />
+          <label for="improvement7">Others(kindly type the feature)</label
+          ><br />
+          <input id="name" type="text" />
+          <p>3. Which Activity in the Classroom Do You Enjoy The Most?</p>
+          <select id="radio" name="activity" class="form-control" required>
+            <option value="" disabled selected>Select your activity</option>
+            <option value="extracurricular-activities">
+              Extracurricular Activities
+            </option>
+            <option value="course-variety">Course Variety</option>
+            <option value="online-game">Online Game</option>
+            <option value="quiz">Quiz</option>
+          </select>
+          <p>4. Which Course Do You Like The Most?</p>
+          <input
+            type="radio"
+            id="responsive-web-design"
+            name="course"
+            value="responsive-web-design"
+          />
+          <label for="responsive-web-design">Responsive Web Design</label><br />
+          <input
+            type="radio"
+            id="javascript-animation"
+            name="course"
+            value="javascript-animation"
+          />
+          <label for="javascript-aniamtion">Javascript Animation</label><br />
+          <input
+            type="radio"
+            id="javascript-algorithm"
+            name="course"
+            value="javascript-algorithm"
+          />
+          <label for="javascript-algorithm">Javascript Algorithm</label><br />
+          <input
+            type="radio"
+            id="game-design"
+            name="course"
+            value="game-design"
+          />
+          <label for="game-design">Game Design</label><br />
+          <input
+            type="radio"
+            id="story-animation"
+            name="course"
+            value="story-animation"
+          />
+          <label for="story-animation">Story Animation</label><br />
+          <input type="radio" id="php" name="course" value="php" />
+          <label for="php">PHP</label><br />
+          <input
+            type="radio"
+            id="database-&-sql"
+            name="course"
+            value="database-&-sql"
+          />
+          <label for="database-&-sql">Database & SQL</label><br />
+          <input type="radio" id="jquery" name="course" value="jquery" />
+          <label for="jquery">JQUERY</label><br />
+          <input
+            type="radio"
+            id="house-design"
+            name="course"
+            value="house-design"
+          />
+          <label for="house-design">House Design</label><br />
+          <input
+            type="radio"
+            id="blender-basic"
+            name="course"
+            value="blender-basic"
+          />
+          <label for="blender-basic">Blender Basic</label><br />
+          <input
+            type="radio"
+            id="own-creation"
+            name="course"
+            value="own-creation"
+          />
+          <label for="own-creation">Own Creation</label><br />
+          <p>5. How Accessible Is Your Coach for Questions and Assistance?</p>
+          <input type="radio" id="very" name="accessible" value="very" />
+          <label for="very">Very</label><br />
+          <input
+            type="radio"
+            id="somewhat-accessible"
+            name="accessible"
+            value="somewhat-accessible"
+          />
+          <label for="somewhat-accessible">Somewhat Accessible</label><br />
+          <input
+            type="radio"
+            id="not-accessible"
+            name="accessible"
+            value="not-accessible"
+          />
+          <label for="not-accessible">Not Accessible</label><br />
+          <p>6. Is Debug Lab Providing Adequate Learning Resources?</p>
+          <input type="radio" id="yes" name="learning-resources" value="yes" />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="no" name="learning-resources" value="no" />
+          <label for="no">No</label><br />
+          <p>7. How Many Hours Do You Spend on Homework Each Week?</p>
+          <form action="/action_page.php">
+            <label for="vol">Hours </label>
+            <input
+              id="myRange"
+              type="range"
+              name="vol"
+              min="0"
+              max="7"
+              class="slider"
+            />
+            <p>Value: <span id="demo"></span></p>
+            <p>(If exceed 7 hours, type the number below)</p>
+            <textarea id="comment" name="comment" rows="1" cols="20"></textarea>
+          </form>
+          <script>
+            var slider = document.getElementById("myRange");
+            var output = document.getElementById("demo");
+            output.innerHTML = slider.value;
 
-        <input
-          type="radio"
-          id="definitely"
-          name="recommendation"
-          value="Definitely"
-        />
-          <label for="definitely">Definitely</label><br />
-         
-        <input type="radio" id="maybe" name="recommendation" value="Maybe" />  
-        <label for="maybe">Maybe</label><br />
-        <input
-          type="radio"
-          id="not-sure"
-          name="recommendation"
-          value="not-sure"
-        />
-          <label for="not-sure">Not sure</label><br />
-        <p>1. What is your favourite features about Debug Lab?</p>
-        <select id="dropdown" name="features" class="form-control" required>
-          <option valve="challenge">Challenge</option>
-          <option valve="project">Project</option>
-          <option valve="community">Community</option>
-          <option valve="devices">Devices</option>
-          <option valve="courses">Courses</option>
-        </select>
-        <p>2. What would you like to see improved? (can choose more than 1)</p>
-        <input
-          type="checkbox"
-          id="improvement1"
-          name="improvement1"
-          value="ways-of-teaching"
-        />
-        <label for="improvement1">Ways of Teaching</label><br />
-        <input
-          type="checkbox"
-          id="improvement2"
-          name="improvement2"
-          value="challenges"
-        />
-        <label for="improvement2">Challenges</label><br />
-        <input
-          type="checkbox"
-          id="improvement3"
-          name="imorovement3"
-          value="course-duration"
-        />
-        <label for="improvement3">Course Duration</label><br />
-        <input
-          type="checkbox"
-          id="improvement4"
-          name="improvement4"
-          value="additional-course"
-        />
-        <label for="improvement4">Additional Course</label><br />
-        <input
-          type="checkbox"
-          id="improvement5"
-          name="improvement5"
-          value="extracurricular-activities"
-        />
-        <label for="improvement5">Extracurricular Activities</label><br />
-        <input
-          type="checkbox"
-          id="improvement6"
-          name="improvement6"
-          value="facilities"
-        />
-        <label for="improvement6">Facilities</label><br />
-        <input
-          type="checkbox"
-          id="improvement7"
-          name="improvement7"
-          value="others"
-        />
-        <label for="improvement7">Others(kindly type the feature)</label><br />
-        <input id="name" type="text" />
-        <p>3. Which activity in the classroom do you enjoy the most?</p>
-        <select id="radio" name="activity" class="form-control"></select>
+            slider.oninput = function () {
+              output.innerHTML = this.value;
+            };
+          </script>
+          <p>8. What Are Your Proudest Achievements This Year?</p>
+          <textarea id="comment" name="comment" rows="3" cols="40"></textarea>
+          <p>9.i) What Do You Like Most About Debug Lab?</p>
+          <textarea id="comment" name="comment" rows="3" cols="40"></textarea>
+          <p>ii) What Do You Like Least About Debug Lab?</p>
+          <textarea id="comment" name="comment" rows="3" cols="40"></textarea>
+          <p>10. Would You Recommend Debug Lab to Your Friend?</p>
+          <input
+            type="radio"
+            id="definitely"
+            name="recommendation"
+            value="Definitely"
+          />
+            <label for="definitely">Definitely</label><br />
+          <input type="radio" id="maybe" name="recommendation" value="Maybe" />
+            <label for="maybe">Maybe</label><br />
+          <input
+            type="radio"
+            id="not-sure"
+            name="recommendation"
+            value="not-sure"
+          />
+            <label for="not-sure">Not sure</label><br />
+          <p><label for="review">Any comments or suggestions? </label></p>
+          <textarea
+            id="review"
+            name="review"
+            rows="4"
+            cols="50"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </form>
       </form>
       <h2></h2>
     </div>
