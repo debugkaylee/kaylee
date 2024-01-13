@@ -1,8 +1,10 @@
 body {
+  padding: 20px;
   width: 100%;
   height: 100vh;
   margin: 0;
   background-color: #ffaa08;
+  font-weight: 100px;
 }
 body ::before {
   background-color: #ffaa08;
@@ -11,4 +13,26 @@ h1,
 h2 {
   margin: 1em auto;
   text-align: center;
+}
+
+.container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+p {
+  padding: 5px;
+  align-content: space-around;
+}
+
+.input-field {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.question {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
