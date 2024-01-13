@@ -30,9 +30,37 @@ p {
 
 .input-field {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .question {
   margin-top: 20px;
   margin-bottom: 50px;
+}
+
+.div-centre {
+  display: flex;
+}
+
+.submit-button {
+  width: 20%;
+  border-radius: 8px;
+  border-width: thin;
+  border-spacing: 5px 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--color-blue);
+  color: inherit;
+  cursor: pointer;
+  overflow: visible;
+  box-shadow: 2px 2px 2px 1px;
+  border: 2px solid #8c82fc;
+}
+:root {
+  --color-blue: #d2fdff;
+  --color-grey: #cacaca;
+}
+button:hover {
+  background: #8c82fc;
+  color: #fff;
 }

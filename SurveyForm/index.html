@@ -24,14 +24,16 @@
             <label>Enter your age:</label>
             <input type="text" placeholder="age" required />
           </div>
-          <p>Which option bestly describes your current role?</p>
-          <select id="dropdown" name="role" class="form-control" required>
-            <option value="" disabled selected>Select your role</option>
-            <option value="student">Student</option>
-            <option value="full-time-employee">Full Time Employee</option>
-            <option value="part-time-employee">Part Time Employee</option>
-            <option value="prefer-not-to-tell">Prefer not to tell</option>
-          </select>
+          <div class="input-field">
+            <p>Which option bestly describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option value="" disabled selected>Select your role</option>
+              <option value="student">Student</option>
+              <option value="full-time-employee">Full Time Employee</option>
+              <option value="part-time-employee">Part Time Employee</option>
+              <option value="prefer-not-to-tell">Prefer not to tell</option>
+            </select>
+          </div>
           <div class="question">
             <p><b>1. What is Your Favourite Features about Debug Lab?</b></p>
             <select id="dropdown" name="features" class="form-control" required>
@@ -262,9 +264,9 @@
             <p>
               <b>9. What Do You Like Most/Least About Debug Lab?</b>
             </p>
-            <p><b>i) What Do You Like Most?</b></p>
+            <h4>i) What Do You Like Most?</h4>
             <textarea id="comment" name="comment" rows="3" cols="40"></textarea>
-            <p><b>ii) What Do You Like Least</b></p>
+            <h5>ii) What Do You Like Least?</h5>
             <textarea id="comment" name="comment" rows="3" cols="40"></textarea>
           </div>
           <div class="question">
@@ -298,6 +300,11 @@
               cols="50"
               placeholder="Enter your comment here..."
             ></textarea>
+          </div>
+          <div class="div-centre">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
           </div>
         </form>
       </form>
