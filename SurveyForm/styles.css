@@ -49,7 +49,7 @@ p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  background: var(--color-blue);
+  background: var(--color-white);
   color: inherit;
   cursor: pointer;
   overflow: visible;
@@ -57,10 +57,12 @@ p {
   border: 2px solid #8c82fc;
 }
 :root {
-  --color-blue: #d2fdff;
-  --color-grey: #cacaca;
+  --color-orange: #ffefd1;
+  --color-grey: #c8ebff;
+  --color-white: #fff;
 }
 button:hover {
   background: #8c82fc;
   color: #fff;
+  box-shadow: 2px 2px 2px 1px #252525;
 }
