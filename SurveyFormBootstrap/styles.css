@@ -1,0 +1,68 @@
+body {
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #ffaa08;
+  font-weight: 100px;
+}
+body ::before {
+  background-color: #ffaa08;
+}
+h1,
+h2 {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+p {
+  padding: 5px;
+  align-content: space-around;
+}
+
+.input-field {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.question {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.div-centre {
+  display: flex;
+}
+
+.submit-button {
+  width: 20%;
+  border-radius: 8px;
+  border-width: thin;
+  border-spacing: 5px 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--color-white);
+  color: inherit;
+  cursor: pointer;
+  overflow: visible;
+  box-shadow: 2px 2px 2px 1px;
+  border: 2px solid #8c82fc;
+}
+:root {
+  --color-orange: #ffefd1;
+  --color-grey: #c8ebff;
+  --color-white: #fff;
+}
+button:hover {
+  background: #8c82fc;
+  color: #fff;
+  box-shadow: 2px 2px 2px 1px #252525;
+}
