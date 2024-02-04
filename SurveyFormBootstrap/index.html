@@ -256,7 +256,9 @@
           <div class="question">
             <p><b>7. How Many Hours Do You Spend on Homework Each Week?</b></p>
             <form action="/action_page.php">
-              <label for="vol">Hours </label>
+              <label for="vol">
+                  Hours
+                </p></label>
               <input
                 id="myRange"
                 type="range"
@@ -266,7 +268,11 @@
                 class="slider"
               />
               <p>Value: <span id="demo"></span></p>
-              <p>(If exceed 7 hours, type the number below)</p>
+              <div class="col-6">
+                <p style="border-style: outset; padding: 1px 1px">
+                  (If exceed 7 hours, type the number below)
+                </p>
+              </div>
               <textarea
                 id="comment"
                 name="comment"
@@ -338,7 +344,10 @@
               value="not-sure"
             />
               <label for="not-sure">Not sure</label><br />
-            <p><label for="review">Any comments or suggestions? </label></p>
+            <div class="question"></div>
+            <p>
+              <b><label for="review">Any comments or suggestions? </label></b>
+            </p>
             <textarea
               id="review"
               name="review"
@@ -346,7 +355,8 @@
               cols="50"
               placeholder="Enter your comment here..."
               class="form-control"
-            ></textarea>
+            >
+            </textarea>
           </div>
           <div class="div-centre">
             <button type="submit" id="submit" class="submit-button">

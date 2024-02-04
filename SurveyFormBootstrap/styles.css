@@ -29,7 +29,7 @@ h2 {
   height: 24px;
   border: 0;
   background: url("contrasticon.png");
-  cursor: pointer;
+  cursor: grab;
 }
 
 .container {
@@ -71,16 +71,26 @@ p {
   color: inherit;
   cursor: pointer;
   overflow: visible;
-  box-shadow: 2px 2px 2px 1px;
-  border: 2px solid #8c82fc;
+  box-shadow: 3px 3px 3px 2px;
+  border: 2px solid #ffaa08;
 }
 :root {
-  --color-orange: #ffefd1;
+  --color-orange: #ffaa08;
   --color-grey: #c8ebff;
   --color-white: #fff;
+  --color-periwrinkle: #8c82fc;
 }
+
 button:hover {
-  background: #8c82fc;
+  background: #ffaa08;
   color: #fff;
-  box-shadow: 2px 2px 2px 1px #252525;
+  box-shadow: 3px 3px 3px 2px #252525;
+}
+
+input[type="range"] {
+  accent-color: #ffbd4b;
+}
+
+input[name="comment"] {
+  border-radius: 5px;
 }
